@@ -1,0 +1,138 @@
+*{
+    background-image: url("bg.jpeg");
+      padding:0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    
+    p {
+      line-height: 2;
+    }
+    
+    /* Logo */
+    
+    .logo {
+      z-index: 20;
+      position: fixed;
+      margin:8px;
+    }
+    
+    .logo img {
+      height:66px;
+      transition:.4s;
+    }
+    
+    /* Navigation menu */
+    
+    nav {
+      z-index: 10;
+      padding:24px 16px;
+      font-family:'Raleway';
+      position:fixed;
+      width:100%;
+      transition:.6s;
+      background-color: #cec3a4da;
+    }
+    
+    nav.scrolled {
+      background:#fff;
+      box-shadow: 0px 4px 4px 0px rgba(50, 50, 50, 0.1);
+    }
+    
+    nav.scrolled + .logo img {
+      height: 60px;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+    }
+    
+    
+  nav ul li {
+    position: relative;
+     padding: 6px;
+    margin-top: 8px;
+    /* background-color: aqua; */
+  
+  
+  }
+  nav ul li a {
+      text-decoration: none;
+      color:#474747;
+      /* margin:0 32px; */
+      padding: 6px;
+    margin-top: 8px;
+      font-size:18px;
+      text-transform: uppercase;
+      /* background-color: brown; */
+    }
+
+    nav ul li a:hover{
+        border: 1px solid #474747 ;
+      }
+      nav ul ul{
+        position: absolute;
+        /* top: 50px; */
+        display: none;
+        /* padding:18px 10px; */
+        background-color:#cec3a4da;
+        /* display: block; */
+        height: 300px;
+        box-sizing: border-box;
+      
+       
+      }
+      nav ul li:hover > ul{
+      display: block;
+      
+      }
+      nav ul ul li{
+        margin-top: 20px;
+        width: 180px;
+        float:none;
+        display: list-item;
+        position: relative;
+        
+      
+      }
+      nav ul ul li a{
+        /* background-color: darkblue; */
+        font: size 18px; 
+        
+      }
+      nav ul ul li a:hover{
+        border: 1px solid #474747 ;
+      }
+      
+      nav .search-container {
+        float: right;
+      }
+      
+      nav input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 18px;
+        border: none;
+      }
+      
+      nav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        background: #474747;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      nav .search-container button:hover {
+        background: #ccc;
+      }
+      
+        
+
+
+   
